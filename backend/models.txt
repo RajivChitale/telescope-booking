@@ -1,0 +1,35 @@
+CREATE TABLE admin (
+emailid VARCHAR(60) NOT NULL,
+PRIMARY KEY(emailid)
+);
+
+CREATE TABLE slot (
+slotid INT NOT NULL AUTO_INCREMENT,
+startdate DATE,
+starttime TIME,
+endtime TIME,
+venue VARCHAR(50),
+guideid VARCHAR(50),
+guidename VARCHAR(50),
+userid VARCHAR(50),
+username VARCHAR(50),
+remarks VARCHAR(100),
+PRIMARY KEY(slotid)
+);
+
+
+v2:
+
+CREATE TABLE slot (
+slotid INT NOT NULL AUTO_INCREMENT,
+startdate DATE,
+starttime VARCHAR(20),
+endtime VARCHAR(20),
+venue VARCHAR(50),
+guideid VARCHAR(50),
+guidename VARCHAR(50),
+userid VARCHAR(50),
+username VARCHAR(50),
+remarks VARCHAR(100),
+PRIMARY KEY(slotid)
+);

@@ -1,0 +1,283 @@
+body {
+    background-image: url("../../public/backdrop.jpg");
+    background-size: cover;  
+    background-repeat: no-repeat;  
+    background-color: black;   
+    zoom: 110%;
+}        
+
+*{
+    font-size: 18px;
+}
+
+.telescopeBooking> h1, .telescopeCreate> h1 {
+    text-align: center;
+    color: white;
+    font-size: 40px;
+}
+
+.telescopeBooking{
+    animation: fadeInAnimation ease 2s;
+}
+
+.telescopeCreate{
+animation: growOut 300ms ease-in-out forwards
+}
+
+@keyframes growOut {
+	from {
+		opacity: 0;
+        transform: scaleX(0);
+	}
+	to {
+		opacity: 1;
+        transform: scaleX(1);
+	}
+}
+
+@keyframes fadeInAnimation {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+}
+
+.telescopeBooking > img {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    height: 6%;
+    margin: 0.5%;
+    width: auto;
+    max-width: 30%;
+    border-color: white;
+    border-width: 1px;
+    border-style: solid;
+}
+
+
+
+/*----------buttons------------*/
+.telescopeMenu {
+    display:flex;
+    justify-content: center;
+    min-width: 350px;
+}
+
+.telescopeMenu >div {
+    max-width: 1200px;
+    width:100%;
+    display:flex;
+    justify-content: flex-end;
+}
+
+.linkButton {
+    margin: 1.5%;
+    background-color: purple;
+    padding: 5px 10px 5px 10px;
+    border: 2px;
+    border-color: plum;
+    border-style:ridge;
+    border-radius: 20px;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    cursor:pointer;
+}
+
+
+.linkButton:hover {
+    background-color: plum;     
+}
+
+
+/*---------slot creation page---------*/ 
+.telescopeCreate {
+   display: flex;
+   align-items: center;
+   flex-direction: column;
+   margin: 1%;
+}
+
+.telescopeSlotForm {
+    color: white;
+    background: rgba(0, 0, 0,  0.6);
+    padding: 10px;
+    border-radius: 10px;
+    width: 100%;
+    max-width: 400px;
+    margin: 2%;
+}
+
+.telescopeSlotForm >  label {
+    display: flex;
+    padding: 10px;
+}
+
+.telescopeSlotForm >  label > div {
+    max-width:90px;
+    width: 100%;
+    padding: 5px;
+}
+
+.telescopeSlotForm >  label > input {
+    max-width:150px;
+    width: 100%;
+    padding: 5px;
+    margin-left: 2%;
+}
+
+
+.telescopeSlotForm >  label > .longInput {
+    max-width:240px !important;
+}
+
+.telescopeSlotForm >  .errorMessage {
+    padding-left: 20px;
+    padding-top: 15px;
+    color: magenta;
+}
+
+
+.adminMenu{
+    display: flex;
+    width: 60%;
+    justify-content: center;
+}
+
+/*---------slot display----------*/
+
+.telescopeSlotsContainer > div {
+    display:flex;
+    justify-content: center;
+    min-width: 400px;
+    size: 100%;
+}
+
+.telescopeSlotsContainer > div> h2 {
+    width: 100%;
+    justify-content: center;
+    text-align: center;
+    max-width: 450px;
+    color: magenta;
+    margin: 20px;
+    border-radius: 10px;
+    padding: 10px;
+    background-color: rgba(0, 0 ,0 ,  0.5);
+    font-size: 21px;
+}
+
+.telescopeSlotTaken, .telescopeSlotFree, .telescopeSlotBooked {
+    display: flex;
+    max-width: 1200px;
+    width:100%;
+    padding: 5px;
+    border-radius: 10px;
+    border: 1px;
+    border-style:ridge;
+    margin: 8px;
+    opacity: 94%;
+    animation: slideInAnimation ease 1.5s;
+    position: relative;
+}        
+  
+@keyframes slideInAnimation {
+    0% { left: -50%;}
+    100% { left: 0%;}
+}
+
+
+.telescopeSlotInfo {
+    display: flex;
+    flex-direction: column;
+}
+
+.telescopeSlotTaken {
+    background: rgba(240, 128, 128,  0.94);
+    border-color: red;
+} 
+
+.telescopeSlotFree {
+    background: rgba(135, 206, 250,  0.94);
+    border-color: blue;
+}
+
+.telescopeSlotBooked {
+    background: rgba(144, 238, 144,  0.94);
+    border-color: Green;
+}
+
+.publicSlotInfo, .privateSlotInfo {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.publicSlotInfo >div 
+{
+    padding: 5px;
+    padding-left: 10px !important;
+    min-width: 220px;
+}
+
+.privateSlotInfo > div
+{
+    padding: 5px;
+    padding-left: 10px !important;
+    min-width: 220px;
+}
+
+
+.telescopeSlotButtons {
+    padding: 2px;
+    margin-left: auto;
+    margin-right: 1.5%;
+    display: flex;
+    align-items: center;
+}
+
+.telescopeSlotButtons >  button, .submitButton {
+    background-color: white;
+    padding: 5px 15px 5px 15px;
+    border-radius: 5px;
+    border: 2px;
+    border-style: inset;
+    border-color: lightgrey;
+    cursor:pointer;
+}
+
+.telescopeSlotButtons >  button:hover, .submitButton:hover{
+    border-color: black;
+    background-color: #EEE;
+    -webkit-transition: border-color 300ms linear;
+    -ms-transition: border-color 300ms linear;
+    transition: border-color 300ms linear;   
+}
+
+.submitButton {
+    font-weight:800;
+}
+
+.telescopeFooter {
+    position: fixed;
+    bottom: 1px;
+    height: 5%;
+    width: 100%;
+    background-color: rgba(0, 0, 0,  0.6);
+    color:white;
+    padding-bottom: 1%;
+    padding-top: 1%;
+    overflow-wrap: normal;
+    display: inline-block;
+}
+
+.telescopeFooter >div >div {
+    font-size:17px !important;
+    margin:5px;
+}
+
+.telescopeFooter >div {
+    width: 85%;
+    padding-bottom: 10px;
+    display: flex;
+    justify-content: space-around;
+}
