@@ -14,7 +14,7 @@ npm install
 Create a database 'cepheid' and two tables. Use the commented code in backend/index.js \
 Insert email ids of admins into the table admin
 
-backend/firebase-config.json is not public here
+backend/serviceAccount.json is not public here
 
 ## Features
 
