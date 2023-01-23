@@ -7,12 +7,12 @@ import { getFirestore } from "@firebase/firestore";
 
 // Your web app's Firebase configuration
 const firebaseConfig = {
-  apiKey: "AIzaSyBIFmCojoSqRR1Y04Zw50L6B04KigzFkmM",
-  authDomain: "telescopebooking-e8833.firebaseapp.com",
-  projectId: "telescopebooking-e8833",
-  storageBucket: "telescopebooking-e8833.appspot.com",
-  messagingSenderId: "525927003665",
-  appId: "1:525927003665:web:4a84a4ea36a0d3c63523b0"
+  apiKey: "AIzaSyD49EZfKpy-3ciQbF99_2AaQ-WhB2VgWWk",
+  authDomain: "telescope-booking-4cb6e.firebaseapp.com",
+  projectId: "telescope-booking-4cb6e",
+  storageBucket: "telescope-booking-4cb6e.appspot.com",
+  messagingSenderId: "1086295564984",
+  appId: "1:1086295564984:web:4c71e3efeee10456b74a4d"
 };
 
 // Initialize Firebase

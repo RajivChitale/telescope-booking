@@ -89,7 +89,7 @@ let menuButton = [];
 let createButton = [];
 //buttons for signin, signout and create-new-slot (for admins)
 if(currid === null)
-    {menuButton = <button onClick={signIn} className="linkButton" > Sign In </button>}
+    {menuButton = <button onClick={signIn} className="linkButton" > Sign In To Book </button>}
 else
     {menuButton = <button onClick={userSignOut} className="linkButton" > Sign Out </button>}
 if(admin)
