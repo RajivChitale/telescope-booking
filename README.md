@@ -12,11 +12,13 @@ To install dependencies, run\
 npm install
 
 Edit URL in frontend/src/components/TelescopeBooking.js to be the address of the backend server.
+backend/serviceAccount.json is not public here. It is needed for firebase authentication services.
 
-Create a database 'cepheid' and two tables. Use the commented code in backend/index.js \
-Manually insert email ids of admins into the table admin
+Create a database 'cepheid' and two tables. Use the commented code in backend/index.js for this.
 
-backend/serviceAccount.json is not public here
+Manually insert gmail ids of admins: <code> INSERT INTO admin VALUES("placeholder@iith.ac.in"); </code> \
+Removal of an admin: <code> DELETE FROM admin WHERE emailid = "placeholder@iith.ac.in"; </code>
+
 
 ## Features
 
