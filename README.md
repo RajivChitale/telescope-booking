@@ -1,5 +1,5 @@
 # telescope-booking
-Webpages for slot booking and creation for Cepheid.
+Webpages for telescope slot booking and creation for Cepheid.
 
 ### Tech Stack
 - Frontend: React
@@ -11,8 +11,10 @@ Webpages for slot booking and creation for Cepheid.
 To install dependencies, run\
 npm install
 
+Edit URL in frontend/src/components/TelescopeBooking.js to be the address of the backend server.
+
 Create a database 'cepheid' and two tables. Use the commented code in backend/index.js \
-Insert email ids of admins into the table admin
+Manually insert email ids of admins into the table admin
 
 backend/serviceAccount.json is not public here
 
