@@ -78,6 +78,8 @@ const TelescopeSlot = (slot,admin,currid,token,hasBooked) => {
     else if(bookingStatus === "Free" && !hasBooked)
         {button = <button id= {slot.slotid} onClick = {bookSlot} > Book </button> }
 
+    else if(bookingStatus === "Taken")
+        {button = <div>Taken</div> }
 
     //slot is colour coded. Slot has info to left, buttons to right. Private info is on second line
     return (
