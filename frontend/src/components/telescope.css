@@ -14,6 +14,7 @@ body {
     text-align: center;
     color: white;
     font-size: 40px;
+    min-width: 300px;
 }
 
 .telescopeBooking{
@@ -59,7 +60,7 @@ animation: growOut 300ms ease-in-out forwards
 .telescopeMenu {
     display:flex;
     justify-content: center;
-    min-width: 350px;
+    min-width: 300px;
 }
 
 .telescopeMenu >div {
@@ -149,7 +150,7 @@ animation: growOut 300ms ease-in-out forwards
 .telescopeSlotsContainer > div {
     display:flex;
     justify-content: center;
-    min-width: 400px;
+    min-width: 300px;
     size: 100%;
 }
 
@@ -178,11 +179,19 @@ animation: growOut 300ms ease-in-out forwards
     opacity: 94%;
     animation: slideInAnimation ease 1.5s;
     position: relative;
+
+    transition: -webkit-transform 0.2s;
+	transition: transform 0.2s;
+	transition: transform 0.2s, -webkit-transform 0.2s; 
 }        
   
 @keyframes slideInAnimation {
     0% { left: -50%;}
     100% { left: 0%;}
+}
+
+.telescopeSlotTaken:hover, .telescopeSlotFree:hover, .telescopeSlotBooked:hover {
+  transform: scale(1.015);
 }
 
 
